@@ -65,6 +65,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('portfolio.hbs', {
+        pageTitle: 'Portfolio'
+    });
+});
+
 app.listen(port, () => {
     console.log(`Il Server è in ascolto sulla porta ${port}`);
 });
